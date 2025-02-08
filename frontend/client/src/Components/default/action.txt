@@ -1,0 +1,73 @@
+{
+    "ObjAction":{
+        "req":"mandatory",
+        "typeof":"object",
+		"repeat":"notallow",
+		"%comment%":"Mention your VR Scene name here"
+	},
+      
+    "actresid":{
+        "req":"mandatory",
+		"root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},	
+      
+    "sourceObj":{
+        "req":"mandatory",
+      	"root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},	
+    
+    "targetObj":{
+        "req":"mandatory",
+      	"root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},	
+    
+    
+    "IsCollision":{
+        "req":"mandatory",
+      	"root":"ObjAction",
+        "typeof":"boolean",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},	
+    
+    "response":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},		
+      
+      "comment":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},
+    
+    "Syncronous":{
+        "req":"mandatory",
+      	"root":"ObjAction",
+        "typeof":"boolean",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},
+      
+    "repeatactionfor":{
+		"req":"mandatory",
+		"root":"ObjAction",
+		"typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	}
+}

@@ -1,0 +1,14 @@
+{
+    "ObjAction": [
+        {
+            "actresid":"",
+            "sourceObj":"",
+            "targetObj":"",	          
+            "IsCollision":"",
+            "response":"",
+            "comment":"",
+            "Syncronous":"",
+            "repeatactionfor":""
+        }
+    ]
+}

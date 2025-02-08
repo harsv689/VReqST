@@ -1,0 +1,31 @@
+If # a>b #:
+    a++;
+!
+EIf # a==b #:
+    a--;
+!
+E:
+    done;
+!
+
+Switch #a#:
+    Case#1#:
+        code
+    !
+    Default:
+        do something;
+    !
+!
+
+For #a/b/c#:
+    code
+!
+
+While # condition #:
+    code;
+!
+
+Do:
+    code
+!
+While #hey#

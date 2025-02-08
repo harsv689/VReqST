@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://amogha:test1234@vreqst.pif2r5b.mongodb.net/",
+  "secretOrKey": "secret"
+}

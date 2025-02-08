@@ -1,0 +1,587 @@
+{
+    "articles": {
+        "req": "mandatory",
+        "typeof": "object",
+        "repeat": "notallow",
+        "%comment%": "ooann"
+    },
+    
+    "_objectname": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "_sid": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "_slabel": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "_IsHidden": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "_enumcount": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "_Is3DObject": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "HasChild": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "shape": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "dradii": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "ooann"
+    },
+    
+    "dvolumn": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "ooann"
+    },
+    
+    "dlength": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "ooann"
+    },
+    
+    "dbreadth": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "ooann"
+    },
+    
+    "dheigth": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "ooann"
+    },
+    
+    "IsText": {
+        "req": "mandatory",
+        "typeof": "boolean",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "IsText3D": {
+        "req": "mandatory",
+        "typeof": "boolean",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "CastShadow": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "lighting",
+        "%comment%": "ooann"
+    },
+    
+    "ReceiveShadow": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "lighting",
+        "%comment%": "ooann"
+    },
+    
+    "ContributeGlobalIlumination": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "lighting",
+        "%comment%": "ooann"
+    },
+    
+    "IsIlluminate": {
+        "req": "mandatory",
+        "typeof": "boolean",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "ooann"
+    },
+    
+    "#x_initialpos": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalpos",
+        "%comment%": "ooann"
+    },
+    
+    "#y_initialpos": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalpos",
+        "%comment%": "ooann"
+    },
+    
+    "#z_initialpos": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalpos",
+        "%comment%": "ooann"
+    },
+    
+    "#x_initialrotation": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalrotation",
+        "%comment%": "ooann"
+    },
+    
+    "#y_initialrotation": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalrotation",
+        "%comment%": "ooann"
+    },
+    
+    "#z_initialrotation": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalrotation",
+        "%comment%": "ooann"
+    },
+    
+    "#x_objectscale": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_objectscale",
+        "%comment%": "ooann"
+    },
+    
+    "#y_objectscale": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_objectscale",
+        "%comment%": "ooann"
+    },
+    
+    "#z_objectscale": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_objectscale",
+        "%comment%": "ooann"
+    },
+    
+    "#distfactorx": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "repeattransform",
+        "%comment%": "ooann"
+    },
+    
+    "#distfactory": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "repeattransform",
+        "%comment%": "ooann"
+    },
+    
+    "#distfactorz": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "repeattransform",
+        "%comment%": "ooann"
+    },
+    
+
+    "XRGrabInteractable": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "ooann"
+    },
+    
+    "XRInteractionMaskLayer": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "ooann"
+    },
+    
+    "TrackPosition": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "ooann"
+    },
+    
+    "TrackRotation": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "ooann"
+    },
+    
+    "Throw_Detach": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "ooann"
+    },
+    
+    "forcegravity": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "ooann"
+    },
+    
+    "velocity": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "ooann"
+    },
+    
+    "angularvelocity": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "ooann"
+    },
+    
+    "Smoothing": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "uuhjefbj"
+    },
+    
+    "Smoothing_duration": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "uuhjefbj"
+    },
+    
+    "#rotate_x": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "#rotate_y": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "#rotate_z": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "#pos_x": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "#pos_y": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "#pos_z": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "value": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "mass": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "dragfriction": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "angulardrag": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "Isgravityenable": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "IsKinematic": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "CanInterpolate": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "CollisionPolling": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_hasaudio": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_type": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_src": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_volume": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_PlayInloop": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_IsSurround": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_Dopplerlevel": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_spread": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_mindist": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "aud_maxdist": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "_Opttxt1": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    },
+    
+    "@context_img_source": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "gehdwib"
+    }
+}

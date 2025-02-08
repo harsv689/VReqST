@@ -1,0 +1,184 @@
+{
+    "elements": [
+        {
+            "type": "if",
+            "displayName": "if",
+            "editorDisplay": "if () ()"
+        },
+        {
+            "type": "else",
+            "displayName": "else",
+            "editorDisplay": "else ()"
+        },
+        {
+            "type": "else-if",
+            "displayName": "else-if",
+            "editorDisplay": "else-if () ()"
+        },
+        {
+            "type": "for",
+            "displayName": "for",
+            "editorDisplay": "for ( / / ) ()"
+        },
+        {
+            "type": "while",
+            "displayName": "while",
+            "editorDisplay": "while () ()"
+        },
+        {
+            "type": "do while",
+            "displayName": "do while",
+            "editorDisplay": "while () ()"
+        }
+    ],
+    "types": [
+        {
+          "type": "if",
+          "order": [["condition"], ["scope"]]
+        },
+  
+        {
+          "type": "else",
+          "prev": ["if", "else-if"],
+          "order": [["scope"]]
+        },
+  
+        {
+          "type": "else-if",
+          "prev": ["if", "else-if"],
+          "order": [["condition"], ["scope"]]
+        },
+  
+        {
+          "type": "switch",
+          "order": [["condition"], ["scope", ["Case"], ["Default"]]]
+        },
+  
+        {
+          "type": "switch-case",
+          "order": [["condition"], ["scope"]]
+        },
+  
+        {
+          "type": "switch-case-default",
+          "order": [["scope"]]
+        },
+  
+        {
+          "type": "for",
+          "order": [
+            ["condition", ["conditionSeparator", "conditionSeparator"]],
+            ["scope"]
+          ]
+        },
+  
+        {
+          "type": "while",
+          "order": [["condition"], ["scope"]]
+        },
+  
+        {
+          "type": "do",
+          "order": [["scope"]],
+          "next": ["do-while"]
+        },
+  
+        {
+          "type": "do-while",
+          "order": [["condition"]],
+          "prev": ["do"]
+        }
+    ],
+    "constructs": [
+      {
+        "name": "if",
+        "type": "if",
+        "conditionStart": "(",
+        "conditionEnd": ")",
+        "scopeStart": "(",
+        "scopeEnd": ")"
+      },
+
+      {
+        "name": "else-if",
+        "type": "else-if",
+        "conditionStart": "(",
+        "conditionEnd": ")",
+        "scopeStart": "(",
+        "scopeEnd": ")",
+        "pre": ["if", "else-if"]
+      },
+
+      {
+        "name": "else",
+        "type": "else",
+        "scopeStart": "(",
+        "scopeEnd": ")",
+        "pre": ["if", "else-if"]
+      },
+
+      {
+        "name": "switch",
+        "type": "switch",
+        "conditionStart": "#",
+        "conditionEnd": "#",
+        "body": "Case",
+        "scopeStart": ":",
+        "scopeEnd": "!",
+        "end-body": "default"
+      },
+
+      {
+        "name": "Case",
+        "type": "switch-case",
+        "conditionStart": "#",
+        "conditionEnd": "#",
+        "scopeStart": ":",
+        "scopeEnd": "!",
+        "parent": "switch"
+      },
+  
+    {
+      "name": "Default",
+      "type": "switch-case-default",
+      "scopeStart": ":",
+      "scopeEnd": "!",
+      "parent": "switch"
+    },
+
+    {
+      "name": "for",
+      "type": "for",
+      "conditionStart": "(",
+      "conditionEnd": ")",
+      "conditionSeparator": "/",
+      "scopeStart": "(",
+      "scopeEnd": ")"
+    },
+
+    {
+      "name": "while",
+      "type": "while",
+      "conditionStart": "(",
+      "conditionEnd": ")",
+      "scopeStart": "(",
+      "scopeEnd": ")"
+    },
+
+    {
+      "name": "do",
+      "type": "do",
+      "scopeStart": ":",
+      "scopeEnd": "!",
+      "next": "do-while"
+    },
+
+    {
+      "name": "do-while",
+      "type": "do-while",
+      "conditionStart": "#",
+      "conditionEnd": "#"
+    }
+    ],
+    "specialSymbols": ["#", ":", "!", "/"]
+}

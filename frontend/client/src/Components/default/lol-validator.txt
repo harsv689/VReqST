@@ -1,0 +1,36 @@
+{
+    "objects": {
+        "num": 7,
+        "typeof": "object",
+        "query": "number of objects"
+    },
+    "one": {
+        "typeof": "string",
+        "query": "value of one"
+    },
+    "two": {
+        "typeof": "string",
+        "query": "value of two"
+    },
+    "three.t-one": {
+        "typeof": "string",
+        "query": "value of t-one"
+    },
+    "three.t-two": {
+        "typeof": "string",
+        "query": "value of t-two"
+    },
+    "four": {
+        "num": 2,
+        "typeof": "object",
+        "query": "number of fours"
+    },
+    "f-one": {
+        "typeof": "string",
+        "query": "value of f-one"
+    },
+    "f-two": {
+        "typeof": "string",
+        "query": "value of f-two"
+    }
+}

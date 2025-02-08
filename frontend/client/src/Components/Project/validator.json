@@ -1,0 +1,347 @@
+{
+    "_scenename":{
+        "req":"mandatory",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"Mention your VR Scene name here"
+    },
+    "_sid":{
+        "req":"mandatory",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"A fillable Unique Identifier of the scene"
+    },
+    "_slabel":{
+        "req":"optional",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"A fillable Optional text field for scene description in 200 words"
+    },
+    "#pid":{
+        "req":"mandatory",
+        "root":"_playarea",
+        "typeof":"string",
+        "%comment%":"Unique identifier for playarea in the VR Scene"
+    },
+    "#length_playarea":{
+        "req":"mandatory",
+        "root":"_playarea",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"Length dimension of the playarea and it is mandatory value tag"
+    },
+    "#breadth_playarea":{
+        "req":"mandatory",
+        "root":"_playarea",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"Breadth dimension of the playarea and it is mandatory value tag"
+    },
+    "#height_playarea":{
+        "req":"mandatory",
+        "root":"_playarea",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"Height dimension of the playarea and it is mandatory value tag"
+    },
+    "#x_scenecenter":{
+        "req":"mandatory",
+        "root":"_playarea",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"x-axis value of scene center of the playarea and it is mandatory value tag"
+    },
+    "#y_scenecenter":{
+        "req":"mandatory",
+        "root":"_playarea",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"y-axis value of scene center of the playarea and it is mandatory value tag"
+    },
+    "#z_scenecenter":{
+        "req":"mandatory",
+        "root":"_playarea",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"z-axis value of scene center of the playarea and it is mandatory value tag"
+    },
+    "IsSceneObject":{
+        "root":"_camera",
+        "req":"mandatory",
+        "typeof":"boolean",
+        "repeat":"notallow",
+        "%comment%":"true for yes, false for no. This is to set initial camera in the scene. Additional attributes include IsSceneObject which holds boolean value and trackingorigin holds string value i.e. either floor (physical real-world ground) or +/- height from the physical real-world ground. Example: 5+floor"
+    },
+    "trackingorigin":{
+        "root":"_camera",
+        "req":"mandatory",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"true for yes, false for no. This is to set initial camera in the scene. Additional attributes include IsSceneObject which holds boolean value and trackingorigin holds string value i.e. either floor (physical real-world ground) or +/- height from the physical real-world ground. Example: 5+floor"
+    },
+    "#x_initialcamerapos":{
+        "root":"_initialcamerapos",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"x-axis value of initial camera position of the playarea and it is mandatory value tag"
+    },
+    "#y_initialcamerapos":{
+        "root":"_initialcamerapos",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"y-axis value of initial camera position of the playarea and it is mandatory value tag"
+    },
+    "#z_initialcamerapos":{
+        "root":"_initialcamerapos",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"z-axis value of initial camera position of the playarea and it is mandatory value tag"
+    },
+    "#x_viewport":{
+        "root":"_viewport",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"x-axis value of viewport of the playarea and it is mandatory value tag"
+    },
+    "#y_viewport":{
+        "root":"_viewport",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"y-axis value of viewport of the playarea and it is mandatory value tag"
+    },
+    "#w_viewport":{
+        "root":"_viewport",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"width value of viewport of the playarea and it is mandatory value tag"
+    },
+    "#h_viewport":{
+        "root":"_viewport",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"height value of viewport of the playarea and it is mandatory value tag"
+    },
+    "near_cp":{
+        "root":"_clippingplane",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"Used to represent near clipping plane with value ranging from 0.0 to 1000000"
+    },
+    "far_cp":{
+        "root":"_clippingplane",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"Used to represent far clipping plane with value ranging from 0.0 to 1000000"
+    },
+    "_horizon":{
+        "req":"mandatory",
+        "typeof":"boolean",
+        "repeat":"notallow",
+        "%comment%":"true for yes, false for no. This is to set horizon sun to map the terrian with real world"
+    },
+    "_dof":{
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"accepts two values 3 and 6. Throw errors for the rest of the values"
+    },
+    "_skybox":{
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"accepts two values 3 and 6. Throw errors for the rest of the values"
+    },
+    "type":{
+        "root":"_controllers",
+        "req":"mandatory",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"To decide the type of controller like Hand, fingure, gesture and other types of controllers"
+    },
+    "raycast":{
+        "root":"_controllers",
+        "req":"mandatory",
+        "typeof":"boolean",
+        "repeat":"notallow",
+        "%comment%":"It is a Physics function that projects a Ray into the scene, returning a boolean value if a target was successfully hit. It is a true or false flag"
+    },
+    "raydistance":{
+        "root":"_controllers",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"It is the distance represents the magnitude of the vector from the ray's origin to the impact point. Value 10 is "
+    },
+    "raythinkness":{
+        "root":"_controllers",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"It is the thickness of ray with minimum value as 1 and max value as 10"
+    },
+    "raycolor":{
+        "root":"_controllers",
+        "req":"mandatory",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"It is the color or ray casted in the Scene. Use color name and use transparent for no color"
+    },
+    "raytype":{
+        "root":"_controllers",
+        "req":"mandatory",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"It is a type of ray which can be a straightline, curve line, wave etc."
+    },
+    "value":{
+        "root":"_gravity",
+        "req":"mandatory",
+        "typeof":"number",
+        "%comment%":"value of earth gravity. Default is 10."
+    },
+    "_interaction":{
+       "req":"mandatory",
+       "typeof":"boolean",
+       "repeat":"notallow",
+       "%comment%":"This describes the interaction capacity in the scene. True for interactions on and False for no interactions"
+    },
+    "#value":{
+        "root":"_nestedscene",
+        "req":"mandatory",
+        "typeof":"boolean",
+        "repeat":"notallow",
+        "%comment%":"True if there is a scene within a scene."
+    },
+    "#scenecount":{
+        "root":"_nestedscene",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"Number of scenes as nested scenes"
+    },
+    "#sid_order":{
+        "root":"_nestedscene",
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"notallow",
+        "%comment%":"the order of the nested scenes"
+    },
+    "_audio":{
+        "req":"mandatory",
+        "typeof":"boolean",
+        "repeat":"notallow",
+        "%comment%":"true for spatial audio, false for no spatial audio"
+    },
+    "_timeline":{
+        "req":"mandatory",
+        "typeof":"boolean",
+        "repeat":"notallow",
+        "%comment%":"true for timed scene with dynamic events, false for a static scene with static events"
+    },
+    "_Opttxt1":{
+        "req":"optional",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"For user optional text"
+    },
+    "@context_mock":{
+        "req":"optional",
+        "typeof":"string",
+        "repeat":"notallow",
+        "%comment%":"For external reference URLs like figma screens or other resource links"
+    },
+    "usertype":{
+        "req":"mandatory",
+        "typeof":"object",
+        "repeat":"notallow",
+        "%comment%":"Defines the scene as Single user or Multi-user scene along with additional values like uplayarea to define the length, breadth and height of the user along with initialupos value in x,y,z coordinates"
+    },
+    "type":{
+        "root": "usertype",
+        "req":"mandatory",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Is the scene single user type or a multi user type. Use single or multi for value tag"
+    },
+    "#length_uplayarea":{
+        "root": "uplayarea",
+        "proot":"usertype", 
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"The length of a user playarea"
+    },
+    "#breadth_uplayarea":{
+        "root": "uplayarea",
+        "proot":"usertype", 
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"breadth of a user playarea"
+    },
+    "#height_uplayarea":{
+        "root": "uplayarea",
+        "proot":"usertype", 
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"height of a user playarea"
+    },
+    "#x_initialupos":{
+        "root": "initialupos",
+        "proot":"usertype", 
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"x-axis  of a user in this user play area"
+    },
+    "#y_initialupos":{
+        "root": "initialupos",
+        "proot":"usertype", 
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"y-axis of a user in this user play area"
+    },
+    "#z_initialupos":{
+        "root": "initialupos",
+        "proot":"usertype", 
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"z-axis of a user in this user play area"
+    },
+    "#x_uplayareacenter":{
+        "root": "uplayareacenter",
+        "proot":"usertype", 
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"x-axis initial position of a user in this user play area"
+    },
+    "#y_uplayareacenter":{
+        "root": "uplayareacenter",
+        "proot":"usertype", 
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"x-axis initial position of a user in this user play area"
+    },
+    "#z_uplayareacenter":{
+        "root": "uplayareacenter",
+        "proot":"usertype", 
+        "req":"mandatory",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"z-axis initial position of a user in this user play area"
+    }
+}

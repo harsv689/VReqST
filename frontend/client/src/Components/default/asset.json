@@ -1,0 +1,106 @@
+{
+	"articles": [
+		{
+			"_objectname": "",
+			"_sid": "",
+			"_slabel": "",
+			"_IsHidden": "",
+			"_enumcount": "",
+			"_Is3DObject": "",
+			"HasChild": "",
+			"shape": "",
+			"dimension": {
+				"dradii": "",
+				"dvolumn": "",
+				"dlength": "",
+				"dbreadth": "",
+				"dheight": ""
+			},
+			"IsText": "",
+			"IsText3D": "",
+			"lighting": {
+				"CastShadow": "",
+				"ReceiveShadow": "",
+				"ContributeGlobalIlumination": ""
+			},
+			"IsIlluminate": "",
+			"Transform_initialpos": {
+				"#x_initialpos": "",
+				"#y_initialpos": "",
+				"#z_initialpos": ""
+			},
+			"Transform_initialrotation": {
+				"#x_initialrotation": "",
+				"#y_initialrotation": "",
+				"#z_initialrotation": ""
+			},
+			"Transform_objectscale": {
+				"#x_objectscale": "",
+				"#y_objectscale": "",
+				"#z_objectscale": ""
+			},
+			"repeattransfrom": {
+				"distfactorx": "",
+				"distfactory": "",
+				"distfactorz": ""
+			},
+			"Interaction": {
+				"XRGrabInteractable": "",
+				"XRInteractionMaskLayer": "",
+				"TrackPosition": "",
+				"TrackRotation": "",
+				"Throw_Detach": "",
+				"forcegravity": "",
+				"velocity": "",
+				"angularvelocity": ""
+			},
+			"Smoothing": "",
+			"Smoothing_duration": "",
+			"attachtransform": {
+				"#rotate_x": "",
+				"#rotate_y": "",
+				"#rotate_z": "",
+				"#pos_x": "",
+				"#pos_y": "",
+				"#pos_z": ""
+			},
+			"XRRigidObject": {
+				"value": "",
+				"mass": "",
+				"dragfriction": "",
+				"angulardrag": "",
+				"Isgravityenable": "",
+				"IsKinematic": "",
+				"CanInterpolate": "",
+				"CollisionPolling": ""
+			},
+			"aud_hasaudio": "",
+			"aud_type": "",
+			"aud_src": "",
+			"aud_volume": "",
+			"aud_PlayInloop": "",
+			"aud_IsSurround": "",
+			"aud_Dopplerlevel": "",
+			"aud_spread": "",
+			"aud_mindist": "",
+			"aud_maxdist": "",
+			"_Opttxt1": "",
+			"@context_img_source": "",
+			"state": [
+				{
+					"stateid": "",
+					"statename": "",
+					"stateinitial": "",
+					"statetransition": [
+						{
+							"sevent": "",
+							"starget": "",
+							"spref": ""
+						}
+					],
+					"statefinal": ""
+				}
+			]
+		}
+	]
+}

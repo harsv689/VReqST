@@ -1,0 +1,82 @@
+{
+    "ObjAction":{
+        "num":8,
+        "req":"mandatory",
+        "typeof":"object",
+        "repeat":"notallow",
+        "%comment%":"Collection of Objects that are set for action and corresponding response",
+        "query":"action-responses"
+    },
+    
+    "actresid":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Unique Identifier for a given action and response",
+        "query":"id of the action-response"
+    },
+    
+    "sourceObj":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Source object where the action is applied or originated",
+        "query":"the source object"
+    },
+    
+    "targetObj":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Target object where the action's response is made visible",
+        "query":"the target object"
+    },
+    
+    "IsCollision":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"boolean",
+        "repeat":"allow",
+        "%comment%":"Flag to determine if the action is based on collision",
+        "query":"Yes or No if the action is based on collision"
+    },
+    
+    "response":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Defines the type of response, i,e, natural law based response or a customized response",
+        "query":"the type of response"
+    },
+        
+    "comment":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Illustrate in words the course of response and its journey",
+        "query":"the course of resonse and its journey"
+    },
+    
+    "Syncronous":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"boolean",
+        "repeat":"allow",
+        "%comment%":"Defines if the response is Syncronous to action or has any delay or Asyncronous to other objects",
+        "query":"Yes or No if the response is syncronous to action"
+    },
+        
+    "repeatactionfor":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Flag to use or repeat the same action for other objects. Mention the targetobjects ids or names",
+        "query":"the other objects to apply the same action"
+    }
+}	       

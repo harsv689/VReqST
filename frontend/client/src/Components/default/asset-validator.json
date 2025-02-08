@@ -1,0 +1,669 @@
+{
+    "articles": {
+        "num": 76,
+        "req": "mandatory",
+        "typeof": "object",
+        "repeat": "notallow",
+        "%comment%": "Array list of Articles that its respective properties",
+        "query": "number of articles"
+    },
+    "_objectname": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Name of the Object",
+        "query": "the name of the object"
+    },
+    "_sid": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "unique identifier to identify the object",
+        "query": "the unique id of the object"
+    },
+    "_slabel": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "50 character label to describe the object",
+        "query": "the label of the object"
+    },
+    "_IsHidden": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Flag to determine if the object is hidden or unhidden",
+        "query": "Yes or No if the object is hidden"
+    },
+    "_enumcount": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Count of objects in the scene",
+        "query": "the number of objects in the scene"
+    },
+    "_Is3DObject": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Flag to determine if the object is 3D or not",
+        "query": "Yes or No if the object is 3D"
+    },
+    "HasChild": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Flag to determine if the object has linked child object",
+        "query": "the number of linked child objects"
+    },
+    "shape": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Shape of the object, mention the geometery type",
+        "query": "the shape of the object"
+    },
+    "dradii": {
+        "req": "mandatory",
+        "typeof": "number",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "radius of the object if it is a sphere else NULL",
+        "query": "the radius of the object"
+    },
+    "dvolumn": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "volumn of the object to determine the size",
+        "query": "the volume of the object"
+    },
+    "dlength": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "Length of the object if it has a length property",
+        "query": "the length of the object"
+    },
+    "dbreadth": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "Breadth of the object if it has a breadth property",
+        "query": "the breadth of the object"
+    },
+    "dheigth": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "dimension",
+        "%comment%": "Height of the object if it has a height property",
+        "query": "the height of the object"
+    },
+    "IsText": {
+        "req": "mandatory",
+        "typeof": "boolean",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Flag to determine if it is a Text object",
+        "query": "Yes or NO if it is a Text object"
+    },
+    "IsText3D": {
+        "req": "mandatory",
+        "typeof": "boolean",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Flag to determine if it is a 3D Text object",
+        "query": "Yes or No if it is a 3D Text object"
+    },
+    "CastShadow": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "lighting",
+        "%comment%": "Flag to determine if the object can cast shadow",
+        "query": "if the object can cast shadow"
+    },
+    "ReceiveShadow": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "lighting",
+        "%comment%": "Flag to determine if the object can receive a shadow",
+        "query": "if the object can receive a shadow"
+    },
+    "ContributeGlobalIlumination": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "lighting",
+        "%comment%": "Flag to determine if the object contributes to overall scene illumination or self glowing object",
+        "query": "if the object contributes to overall scene illumination or self glowing object"
+    },
+    "IsIlluminate": {
+        "req": "mandatory",
+        "typeof": "boolean",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Flag to determine if the object can illuminate self",
+        "query": "Yes or No if the object can self-illuminate"
+    },
+    "#x_initialpos": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalpos",
+        "%comment%": "x-axis initial position of the object in the scene terrian",
+        "query": "x-axis initial position of the object in the scene terrian"
+    },
+    "#y_initialpos": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalpos",
+        "%comment%": "y-axis initial position of the object in the scene terrian",
+        "query": "y-axis initial position of the object in the scene terrian"
+    },
+    "#z_initialpos": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalpos",
+        "%comment%": "z-axis initial position of the object in the scene terrian",
+        "query": "z-axis initial position of the object in the scene terrian"
+    },
+    "#x_initialrotation": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalrotation",
+        "%comment%": "x-axis initial rotation stance of the object in the scene terrian",
+        "query": "x-axis initial rotation stance of the object in the scene terrian"
+    },
+    "#y_initialrotation": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalrotation",
+        "%comment%": "y-axis initial rotation stance of the object in the scene terrian",
+        "query": "y-axis initial rotation stance of the object in the scene terrian"
+    },
+    "#z_initialrotation": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_initalrotation",
+        "%comment%": "z-axis initial rotation stance of the object in the scene terrian",
+        "query": "z-axis initial rotation stance of the object in the scene terrian"
+    },
+    "#x_objectscale": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_objectscale",
+        "%comment%": "x-axis tranformable object scale of the object in the scene terrian",
+        "query": "x-axis tranformable object scale of the object in the scene terrian"
+    },
+    "#y_objectscale": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_objectscale",
+        "%comment%": "y-axis tranformable object scale of the object in the scene terrian",
+        "query": "y-axis tranformable object scale of the object in the scene terrian"
+    },
+    "#z_objectscale": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Transform_objectscale",
+        "%comment%": "z-axis tranformable object scale of the object in the scene terrian",
+        "query": "z-axis tranformable object scale of the object in the scene terrian"
+    },
+    "#distfactorx": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "repeattransform",
+        "%comment%": "Distance Factor in x-axis of the object",
+        "query": "distance Factor in x-axis of the object"
+    },
+    "#distfactory": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "repeattransform",
+        "%comment%": "Distance Factor in y-axis of the object",
+        "query": "distance Factor in y-axis of the object"
+    },
+    "#distfactorz": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "repeattransform",
+        "%comment%":"Distance Factor in z-axis of the object",
+        "query": "distance Factor in z-axis of the object"
+    },
+    "XRGrabInteractable": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "Flag to determine if the object is grabbable and has interaction",
+        "query": "if the object is grabbable and has interaction"
+    },
+    "XRInteractionMaskLayer": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "Flag to determine if the object interaction has masked layer",
+        "query": "if the object interaction has masked layer"
+    },
+    "TrackPosition": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "Flag to determine if the object can have a tracker position",
+        "query": "if the object can have a tracker position"
+    },
+    "TrackRotation": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "Flag to determine if the object can have a tracker rotation",
+        "query": "if the object can have a tracker rotation"
+    },
+    "Throw_Detach": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "Flag to determine if the object can be thrown and detachable",
+        "query": "if the object can be thrown and detachable"
+    },
+    "forcegravity": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "Flag to determine if the object can have a force gravity applied",
+        "query": "if the object can have a force gravity applied"
+    },
+    "velocity": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "Flag to determine if the object can hold natural velocity",
+        "query": "if the object can hold natural velocity"
+    },
+    "angularvelocity": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "proot": "articles",
+        "root": "Interaction",
+        "%comment%": "Flag to determine if the object can hold an angular velocity",
+        "query": "if the object can hold an angular velocity"
+    },
+    "Smoothing": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Flag to determine if the object can hold smoothing",
+        "query": "if the object can hold smoothing"
+    },
+    "Smoothing_duration": {
+        "req": "mandatory",
+        "typeof": "string",
+        "repeat": "allow",
+        "root": "articles",
+        "%comment%": "Flag to determine if the object smoothing duration",
+        "query": "if the object smoothing duration"
+    },
+    "#rotate_x": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "Flag to determine x-axis of object rotation position",
+        "query": "x-axis of object rotation position"
+    },
+    "#rotate_y": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "Flag to determine y-axis of object rotation position",
+        "query": "y-axis of object rotation position"
+    },
+    "#rotate_z": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "Flag to determine z-axis of object rotation position",
+        "query": "z-axis of object rotation position"
+    },
+    "#pos_x": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "Flag to determine x-axis of object transform position",
+        "query": "x-axis of object transform position"
+    },
+    "#pos_y": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "Flag to determine y-axis of object transform position",
+        "query": "y-axis of object transform position"
+    },
+    "#pos_z": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "attachtransform",
+        "repeat": "allow",
+        "%comment%": "Flag to determine y-axis of object transform position",
+        "query": "y-axis of object transform position"
+    },
+    "value": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "Level of rigid with the scale of 1 to 10",
+        "query": "the level of rigid (1-10)"
+    },
+    "mass": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "Flag to mention the mass of the object",
+        "query": "the mass of the object"
+    },
+    "dragfriction": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "Flag to determine if the object can hold drag friction",
+        "query": "if the object can hold drag friction"
+    },
+    "angulardrag": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "Flag to determine if the object can be angular drag",
+        "query": "if the object can be angular drag"
+    },
+    "Isgravityenable": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "Flag to determine if the object abides by natural gravity",
+        "query": "if the object abides by natural gravity"
+    },
+    "IsKinematic": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "Flag to determine if the object is mobile or kinematic",
+        "query": "if the object is mobile or kinematic"
+    },
+    "CanInterpolate": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "Flag to determie if the object can interpolate",
+        "query": "if the object can interpolate"
+    },
+    "CollisionPolling": {
+        "req": "mandatory",
+        "typeof": "string",
+        "proot": "articles",
+        "root": "XRRigidObject",
+        "repeat": "allow",
+        "%comment%": "Flag to determine if the object can CollisionPolling",
+        "query": "if the object can CollisionPolling"
+    },
+    "aud_hasaudio": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Flag to determine if the object has audio setup",
+        "query": "if the object has audio setup"
+    },
+    "aud_type": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Type of Audio file",
+        "query": "the type of audio file"
+    },
+    "aud_src": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Audio Source file and its path",
+        "query": "the audio source file and its path"
+    },
+    "aud_volume": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Measure of audio volume",
+        "query": "the measure of audio volume"
+    },
+    "aud_PlayInloop": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Flag to determine if the audio is playable in loop",
+        "query": "if the audio is playable in loop"
+    },
+    "aud_IsSurround": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Flag to determine if the audio of the object is surroundable",
+        "query": "if the audio of the object is surroundable"
+    },
+    "aud_Dopplerlevel": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Audio doppler level of the object if available",
+        "query": "the audio doppler level of the object"
+    },
+    "aud_spread": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Audio spread measure of the object",
+        "query": "the audio spread measure of the object"
+    },
+    "aud_mindist": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Minimum distance covered via audio",
+        "query": "the minimum distance covered via audio"
+    },
+    "aud_maxdist": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Maximum distance covered via audio",
+        "query": "the maximum distance covered via audio"
+    },
+    "_Opttxt1": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "optional notes placeholder to add additional notes about the object",
+        "query": "some optional notes about the object"
+    },
+    "@context_img_source": {
+        "req": "mandatory",
+        "typeof": "string",
+        "root": "articles",
+        "repeat": "allow",
+        "%comment%": "Sample image source file location for designer reference",
+        "query": "the sample image source file location"
+    },
+	"state": {
+        "num":8,
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"object",
+        "repeat":"allow",
+        "%comment%":"This is a master node for state array object to defined states of a given action and its response over objects",
+        "query":"number of states"
+	},
+	"stateid": {
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"Define your own unique identifier to identify a state",
+        "query":"the unique stateid"
+    },
+	"statename": {
+        "req":"mandatory",
+        "proot":"state",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Provide a state name for a given stateid",
+        "query":"the state name"
+	},
+	"stateinitial": {
+        "req":"mandatory",
+        "proot":"state",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Describe your Initial Statement in less than 10 words",
+        "query":"the initial state"
+    },
+	"statetransition": {
+        "num":3,
+        "req":"mandatory",
+        "proot":"state",
+        "root":"ObjAction",
+        "typeof":"object",
+        "repeat":"allow",
+        "%comment%":"to describe the underlying events and target with a preference value",
+        "query":"the underlying events and target with a preference value"
+	},
+	"sevent": {
+        "req":"mandatory",
+        "proot":"statetransition",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"to describe the underlying events and its target along with a preference value",
+        "query":"the underlying events and its target along with a preference value"
+	},
+	"starget": {
+        "req":"mandatory",
+        "proot":"statetransition",
+        "root":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"to describe the underlying target for a given event along with a preference value",
+        "query":"the underlying target for a given event along with a preference value"
+	},
+	"spref": {
+        "req":"mandatory",
+        "proot":"statetransition",
+        "root":"ObjAction",
+        "typeof":"number",
+        "repeat":"allow",
+        "%comment%":"to describe the preference value for a given sevent and starget. It starts with value 0",
+        "query":"the preference value for a given sevent and starget"
+	},
+	"statefinal": {
+        "req":"mandatory",
+        "root":"state",
+        "proot":"ObjAction",
+        "typeof":"string",
+        "repeat":"allow",
+        "%comment%":"Describe your final Statement in less than 10 words",
+        "query":"the final state"
+	}
+}

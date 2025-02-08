@@ -1,0 +1,153 @@
+{
+    "ObjAction":{
+        "req":"mandatory",
+        "typeof":"object",
+		"repeat":"notallow",
+		"%comment%":"Mention your VR Scene name here"
+	},
+      
+    "actresid":{
+        "req":"mandatory",
+		"root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},	
+      
+    "sourceObj":{
+        "req":"mandatory",
+      	"root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},	
+    
+    "targetObj":{
+        "req":"mandatory",
+      	"root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},	
+    
+    
+    "IsCollision":{
+        "req":"mandatory",
+      	"root":"ObjAction",
+        "typeof":"boolean",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},	
+    
+    "response":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},		
+      
+      "comment":{
+        "req":"mandatory",
+        "root":"ObjAction",
+        "typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},
+    
+    "Syncronous":{
+        "req":"mandatory",
+      	"root":"ObjAction",
+        "typeof":"boolean",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},
+      
+    "repeatactionfor":{
+		"req":"mandatory",
+		"root":"ObjAction",
+		"typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Mention your VR Scene name here"
+	},
+
+    "state":{
+		"req":"mandatory",
+		"root":"ObjAction",
+		"typeof":"object",
+		"repeat":"allow",
+		"%comment%":"This is a master node for state array object to defined states of a given action and its response over objects"
+	},
+      
+    "stateid":{
+		"req":"mandatory",
+		"root":"ObjAction",
+		"typeof":"number",
+		"repeat":"allow",
+		"%comment%":"Define your own unique identifier to identify a state"
+	},
+      
+    
+    "statename":{
+		"req":"mandatory",
+		"proot":"state",
+		"root":"ObjAction",
+		"typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Provide a state name for a given stateid"
+    },
+    
+    "stateinitial":{
+		"req":"mandatory",
+		"proot":"state",
+		"root":"ObjAction",
+		"typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Describe your Initial Statement in less than 10 words"
+	},
+    
+    "statetransition":{
+		"req":"mandatory",
+		"proot":"state",
+		"root":"ObjAction",
+		"typeof":"object",
+		"repeat":"allow",
+		"%comment%":"to describe the underlying events and target with a preference value"
+    },
+    
+    "sevent":{
+		"req":"mandatory",
+		"proot":"statetransition",
+		"root":"ObjAction",
+		"typeof":"string",
+		"repeat":"allow",
+		"%comment%":"to describe the underlying events and its target along with a preference value"
+    },
+    
+    "starget":{
+		"req":"mandatory",
+		"proot":"statetransition",
+		"root":"ObjAction",
+		"typeof":"string",
+		"repeat":"allow",
+		"%comment%":"to describe the underlying target for a given event along with a preference value"
+    },
+    
+    "spref":{
+    	"req":"mandatory",
+		"proot":"statetransition",
+		"root":"ObjAction",
+		"typeof":"number",
+		"repeat":"allow",
+		"%comment%":"to describe the perference value for a given sevent and starget. It starts with value 0"
+    },
+    
+    "statefinal":{
+		"req":"mandatory",
+		"root":"state",
+		"proot":"ObjAction",
+		"typeof":"string",
+		"repeat":"allow",
+		"%comment%":"Describe your final Statement in less than 10 words"
+    }
+}
